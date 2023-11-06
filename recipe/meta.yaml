@@ -1,5 +1,5 @@
 {% set name = "esa-climate-toolbox" %}
-{% set version = "0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/esa-cci/esa-climate-toolbox/archive/v{{ version }}.tar.gz
-  sha256: 8a104bb83a2201e3273ce3acfbdb1d2549750d3f84a51447e594043261d96034
+  sha256: 28a2c1ec12edaf846b1948363426c730f418f14d864ce42c3ffe0139e2ea8285
 
 build:
   noarch: python
@@ -31,8 +31,7 @@ test:
 
 about:
   home: https://github.com/esa-cci/esa-climate-toolbox
-  summary: 'A python package to provide access
-  to CCI data from the ESA Climate Data Centre'
+  summary: 'A python package to provide access to CCI data from the ESA Climate Data Centre'
   description: |
     The ESA Climate Toolbox is designed to provide access to CCI data
     from the ESA Climate Data Centre.
