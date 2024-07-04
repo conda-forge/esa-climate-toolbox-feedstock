@@ -25,7 +25,6 @@ requirements:
     - cartopy
     - cftime
     - dask
-    - dateutil
     - geopandas
     - lxml >=4.5
     - matplotlib-base
@@ -35,6 +34,7 @@ requirements:
     - pandas
     - pydap ==3.3
     - pyproj
+    - python-dateutil
     - rioxarray
     - shapely
     - six
