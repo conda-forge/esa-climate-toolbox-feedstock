@@ -23,11 +23,22 @@ requirements:
     # Required
     - aiohttp >=3.6
     - cartopy
+    - cftime
+    - dask
+    - dateutil
+    - geopandas
     - lxml >=4.5
     - matplotlib-base
     - nest-asyncio >=1.3
+    - numcodecs
     - numpy <2
+    - pandas
     - pydap ==3.3
+    - pyproj
+    - rioxarray
+    - shapely
+    - six
+    - xarray
     - xcube >=1.4.0
     - xvec
 
