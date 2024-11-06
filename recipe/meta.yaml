@@ -1,3 +1,4 @@
+{% set python_min = "3.8" %}
 {% set name = "esa-climate-toolbox" %}
 {% set version = "1.2" %}
 
@@ -16,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >={{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     # Required
     - aiohttp >=3.6
     - cartopy
