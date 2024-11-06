@@ -23,7 +23,6 @@ requirements:
   run:
     - python >={{ python_min }}
     # Required
-    - aiohttp >=3.6
     - cartopy
     - cftime
     - dask
