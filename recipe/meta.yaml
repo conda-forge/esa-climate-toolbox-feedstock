@@ -38,6 +38,7 @@ requirements:
     - xarray
     - xcube >=1.4.0
     - xcube-cci >=0.11.1
+    - zarr <3
 
 test:
   requires:
