@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "esa-climate-toolbox" %}
-{% set version = "1.3" %}
+{% set version = "1.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/esa-cci/esa-climate-toolbox/archive/v{{ version }}.tar.gz
-  sha256: 92e80ce013663dcaf7a47fffe5a4cda963efb7ac70a196413687d5ffd646a002
+  sha256: 4f8a6d7295ac783ddeda08337acd9392e9d2e99e66942575009325390cf5d573
 
 build:
   noarch: python
@@ -38,6 +38,7 @@ requirements:
     - xarray
     - xcube >=1.4.0
     - xcube-cci >=0.11.1
+    - zarr <3
 
 test:
   requires:
