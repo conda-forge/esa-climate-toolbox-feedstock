@@ -28,7 +28,7 @@ requirements:
     - dask
     - geopandas
     - matplotlib-base
-    - numba > 0.35
+    - numba >0.35
     - numcodecs
     - numpy    
     - pandas
