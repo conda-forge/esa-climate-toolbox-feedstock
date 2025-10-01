@@ -26,7 +26,7 @@ requirements:
     - cartopy
     - cftime
     - dask
-    - geopandas >= 0.14
+    - geopandas >=0.14
     - matplotlib-base
     - numba >0.35
     - numcodecs
