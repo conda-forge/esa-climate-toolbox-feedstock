@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "esa-climate-toolbox" %}
-{% set version = "1.4" %}
+{% set version = "1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/esa-cci/esa-climate-toolbox/archive/v{{ version }}.tar.gz
-  sha256: f0bc4460c7b8da8ea70709d59b38f5afe2c3f6d98cf222e6694df6517f17659c
+  sha256: 2e2b996c9f2d62691b3333435eb04c87d8427bc596337515888715e572b2e568
 
 build:
   noarch: python
@@ -26,15 +26,16 @@ requirements:
     - cartopy
     - cftime
     - dask
-    - geopandas
+    - geopandas >=0.14
     - matplotlib-base
     - numba >0.35
     - numcodecs
-    - numpy    
+    - numpy
     - pandas
     - pyproj
     - python-dateutil
     - shapely
+    - simplekml
     - six
     - xarray
     - xcube >=1.8.0
@@ -61,11 +62,12 @@ about:
 
 extra:
   recipe-maintainers:
-    - TonioF
+    - AliceBalfanz
+    - b-yogesh
+    - clarasb
+    - forman
+    - konstntokas
     - pont-us
     - TejasMorbagal
-    - forman
-    - AliceBalfanz
     - thomasstorm
-    - konstntokas
-    - b-yogesh
+    - TonioF
