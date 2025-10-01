@@ -26,7 +26,7 @@ requirements:
     - cartopy
     - cftime
     - dask
-    - geopandas
+    - geopandas >= 0.14
     - matplotlib-base
     - numba >0.35
     - numcodecs
@@ -35,6 +35,7 @@ requirements:
     - pyproj
     - python-dateutil
     - shapely
+    - simplekml
     - six
     - xarray
     - xcube >=1.8.0
@@ -69,3 +70,4 @@ extra:
     - thomasstorm
     - konstntokas
     - b-yogesh
+    - clarasb
