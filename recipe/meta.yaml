@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "esa-climate-toolbox" %}
-{% set version = "1.5" %}
+{% set version = "1.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/esa-cci/esa-climate-toolbox/archive/v{{ version }}.tar.gz
-  sha256: 2e2b996c9f2d62691b3333435eb04c87d8427bc596337515888715e572b2e568
+  sha256: f0a45a9927d44cb23824a62e61fee01a3bc3640716ae5383ee17e143aa839f0a
 
 build:
   noarch: python
