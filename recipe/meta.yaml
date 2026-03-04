@@ -31,7 +31,7 @@ requirements:
     - numba >0.35
     - numcodecs
     - numpy
-    - pandas
+    - pandas <3
     - pyproj
     - python-dateutil
     - shapely
@@ -39,7 +39,7 @@ requirements:
     - six
     - xarray
     - xcube >=1.8.0
-    - xcube-cci >=0.11.1
+    - xcube-cci >=0.13
     - zarr <3
 
 test:
