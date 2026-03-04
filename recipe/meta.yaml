@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "esa-climate-toolbox" %}
-{% set version = "1.5.1" %}
+{% set version = "1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/esa-cci/esa-climate-toolbox/archive/v{{ version }}.tar.gz
-  sha256: f0a45a9927d44cb23824a62e61fee01a3bc3640716ae5383ee17e143aa839f0a
+  sha256: 36002cd55b376e82354a9235e4e9c3d6d8afc140a8bd045cd3e6403f96e26c84
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ requirements:
     - numba >0.35
     - numcodecs
     - numpy
-    - pandas
+    - pandas <3
     - pyproj
     - python-dateutil
     - shapely
@@ -39,7 +39,7 @@ requirements:
     - six
     - xarray
     - xcube >=1.8.0
-    - xcube-cci >=0.11.1
+    - xcube-cci >=0.13
     - zarr <3
 
 test:
