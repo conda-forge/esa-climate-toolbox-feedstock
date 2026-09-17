@@ -20,10 +20,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20061&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/esa-climate-toolbox-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/esa-climate-toolbox-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/esa-climate-toolbox-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -46,31 +47,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `esa-climate-toolbox` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install esa-climate-toolbox
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install esa-climate-toolbox
 ```
 
-It is possible to list all of the versions of `esa-climate-toolbox` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add esa-climate-toolbox
+# for installing globally
+pixi global install esa-climate-toolbox
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `esa-climate-toolbox` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search esa-climate-toolbox --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search esa-climate-toolbox --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search esa-climate-toolbox --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -82,6 +125,8 @@ mamba repoquery whoneeds esa-climate-toolbox --channel conda-forge
 # List dependencies of `esa-climate-toolbox`:
 mamba repoquery depends esa-climate-toolbox --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
